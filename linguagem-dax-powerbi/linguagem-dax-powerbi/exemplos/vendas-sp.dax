@@ -1,0 +1,4 @@
+Vendas SP = CALCULATE(
+    SUM(Vendas[Valor]),
+    Vendas[Estado] = "SP"
+)

@@ -1,0 +1,4 @@
+Crescimento = 
+VAR VendasAtual = SUM(Vendas[Valor])
+VAR VendasAnterior = CALCULATE(SUM(Vendas[Valor]), SAMEPERIODLASTYEAR('Calendario'[Data]))
+RETURN DIVIDE(VendasAtual - VendasAnterior, VendasAnterior)
